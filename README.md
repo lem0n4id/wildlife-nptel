@@ -1,3 +1,46 @@
+# Project Analysis
+
+## Configuration Files
+- **.eslintrc.json**: ESLint configuration for linting JavaScript/TypeScript code.
+- **next.config.mjs**: Next.js configuration for server-side rendering and static site generation.
+- **package.json**: Project metadata and dependencies.
+- **postcss.config.mjs**: PostCSS configuration for transforming CSS.
+- **tailwind.config.ts**: Tailwind CSS configuration for utility-first CSS framework.
+- **tsconfig.json**: TypeScript configuration specifying compiler options.
+
+## Source Code Structure
+- **src/app**: Main application directory.
+  - **fonts/**: Contains font files (`GeistMonoVF.woff`, `GeistVF.woff`).
+  - **globals.css**: Global CSS styles.
+  - **layout.tsx**: Layout component for the application.
+  - **page.tsx**: Main page component.
+  - **quiz/**: Directory for quiz-related pages.
+    - **[week]/page.tsx**: Dynamic route for weekly quizzes.
+    - **page.tsx**: Main quiz page component.
+- **src/components**: Reusable components.
+  - **Quiz.tsx**: Component for displaying quizzes.
+  - **WeekSelector.tsx**: Component for selecting weeks.
+- **src/data**: Data-related files.
+  - **questions.ts**: Contains quiz questions data.
+- **src/types**: TypeScript type definitions.
+  - **Question.ts**: Type definition for a quiz question.
+
+## Packages and Dependencies
+Based on `package.json`:
+- **Next.js**: For server-side rendering and static site generation.
+- **React**: For building user interfaces.
+- **TypeScript**: For static type checking.
+- **ESLint**: For linting JavaScript/TypeScript code.
+- **PostCSS**: For transforming CSS.
+- **Tailwind CSS**: For utility-first CSS styling.
+- **pnpm**: For package management (indicated by `pnpm-lock.yaml`).
+
+## Features
+- **Dynamic Routing**: `[week]/page.tsx` indicates dynamic routing for weekly quizzes.
+- **Reusable Components**: Components like `Quiz.tsx` and `WeekSelector.tsx` suggest a modular UI approach.
+- **TypeScript Types**: `Question.ts` indicates the use of TypeScript for type safety.
+- **Styling**: Global styles in `globals.css` and utility-first styling via Tailwind CSS.
+  
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

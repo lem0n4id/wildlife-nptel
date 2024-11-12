@@ -1,6 +1,6 @@
 "use client";
 
-import { questionsByWeek } from "@/data/questions";
+import { questionsByModule } from "@/data/questions";
 import { ArrowLeft, Check, X, RefreshCw } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Question } from "@/types/Question";
@@ -19,7 +19,7 @@ export default function QuizPage({ params }: { params: { week: string } }) {
 
   const shuffleQuestions = () => {
     const allQuestions =
-      week === "all" ? Object.values(questionsByWeek).flat() : questionsByWeek[week] || [];
+      week === "all" ? Object.values(questionsByModule).flat() : questionsByModule[week] || [];
     const shuffled = allQuestions
       .sort(() => Math.random() - 0.5)
       .map((q) => ({

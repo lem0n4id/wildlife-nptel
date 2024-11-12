@@ -25,7 +25,7 @@ const WeekSelector: React.FC<WeekSelectorProps> = ({ weeks }) => {
             >
               <span className="flex items-center">
                 <Calendar className="mr-2 text-gray-400" size={20} />
-                <span className="text-lg">Week {week.replace("week", "")}</span>
+                <span className="text-lg">Module {week.replace("module", "")}</span>
               </span>
               <ArrowRight className="text-gray-400" size={20} />
             </Link>

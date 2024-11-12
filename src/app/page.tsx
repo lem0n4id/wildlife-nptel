@@ -66,7 +66,7 @@ export default function Home() {
             />
           </Link>
           <a
-            href="https://github.com/sr2echa/wildlife-nptel"
+            href="https://github.com/lem0n4id/wildlife-nptel"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-white hover:text-gray-300 transition-colors duration-300"
